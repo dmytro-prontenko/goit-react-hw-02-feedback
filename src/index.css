@@ -1,4 +1,6 @@
 @import-normalize; /* bring in normalize.css styles */
+@import url('./components/FeedbackOptions/FeedbackOptions.css');
+@import url('./components/Statistics/Statistics.css');
 
 body {
   margin: 0;
@@ -7,9 +9,24 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #778da9;
+  color: #1b263b;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+
+.quant {
+  font-weight: bold;
 }
