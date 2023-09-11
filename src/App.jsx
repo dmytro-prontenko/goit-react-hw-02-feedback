@@ -3,7 +3,6 @@ import Section from 'components/Section/Section';
 import React from 'react';
 import FeedbackOptions from 'components/FeedbackOptions/FeedbackOptions';
 
-
 class App extends React.Component {
   state = {
     good: 0,
@@ -30,7 +29,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className='content-wrapper'>
+      <div className="content-wrapper">
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
             options={Object.keys(this.state)}
@@ -42,7 +41,7 @@ class App extends React.Component {
             data={this.state}
             total={this.countTotalFeedback}
             positivePercentage={this.countPositiveFeedbackPercentage}
-          ></Statistics>
+          />
         </Section>
       </div>
     );
