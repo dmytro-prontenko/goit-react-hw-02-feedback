@@ -47,6 +47,7 @@ class App extends React.Component {
             />
           ) : <Notification message={'There is no feedback'} />}
         </Section>
+        
       </div>
     );
   }
