@@ -13,7 +13,7 @@ const Statistics = ({ data, total, positivePercentage }) => {
     );
   });
 
-  return total() ? (
+  return (
     <>
       <ul className="feedbacks-container">{items}</ul>
       <p className="total">
@@ -25,9 +25,7 @@ const Statistics = ({ data, total, positivePercentage }) => {
         <span className="quant">{positivePercentage()}%</span>
       </p>
     </>
-  ) : (
-    <Notification message={'There is no feedback'} />
-  );
+  ) ;
 };
 
 Statistics.propTypes = {
